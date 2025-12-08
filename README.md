@@ -141,7 +141,9 @@ GuessMasterArena/
 │   │   │   └── 📄 main.css         # 🎨 Main stylesheet
 │   │   ├── 📄 App.jsx              # 🚀 Main app component
 │   │   └── 📄 index.js             # 🎯 Entry point
+│   ├── 📄 .env                     # 🔐 Environment variables
 │   ├── 📄 .env.example             # 🔧 Environment template
+│   ├── 📄 vercel.json              # 🚀 Vercel deployment config
 │   ├── 📄 package.json             # 📦 Frontend dependencies
 │   └── 📄 package-lock.json        # 🔒 Dependency lock
 ├── 📂 backend/                     # 🔧 Node.js backend service
@@ -165,7 +167,10 @@ GuessMasterArena/
 │   ├── 📂 utils/                  # 🛠️ Utility functions
 │   │   ├── 📄 ai.js               # 🤖 AI opponent logic
 │   │   └── 📄 scoring.js          # 📊 Scoring algorithms
+│   ├── 📄 .env                     # 🔐 Environment variables
 │   ├── 📄 .env.example             # 🔧 Environment template
+│   ├── 📄 Procfile                 # 🚀 Railway/Heroku config
+│   ├── 📄 railway.json             # 🚂 Railway deployment config
 │   ├── 📄 package.json             # 📦 Backend dependencies
 │   ├── 📄 package-lock.json        # 🔒 Dependency lock
 │   └── 📄 server.js               # 🚀 Server entry point
@@ -411,6 +416,34 @@ Guess the secret number (1-100) with the fewest attempts
 - 🗣️ **Voice Chat** — Real-time voice communication
 - 🤖 **Advanced AI** — Multiple difficulty levels
 - 🌍 **Global Events** — Worldwide gaming competitions
+
+<br>
+
+---
+
+## 🚀 Deployment
+
+### **Frontend (Vercel)**
+1. Push code to GitHub
+2. Import project on [vercel.com](https://vercel.com)
+3. Set Root Directory: `frontend`
+4. Add environment variables
+5. Deploy
+
+### **Backend (Railway)**
+1. Install Railway CLI: `npm install -g @railway/cli`
+2. Login: `railway login`
+3. Deploy: `cd backend && railway up`
+4. Add environment variables in dashboard
+5. Copy generated URL for frontend
+
+### **Database (MongoDB Atlas)**
+1. Create free cluster at [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
+2. Whitelist IP: `0.0.0.0/0`
+3. Get connection string
+4. Add to Railway environment variables
+
+**Live Demo:** Coming Soon 🎮
 
 <br>
 
